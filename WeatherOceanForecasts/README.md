@@ -1,3 +1,10 @@
+diary:
+0222
+1. 用baseline的Dockerfile，构建过程中提示python3.5的警告；提交时一直提示pullbackoff，似乎image无法被接受
+2. 改用tensorflow自己的gpu版本2.1.2，提交顺利，运行时却报错了
+提交具体截图如下：
+![image](https://github.com/alyzleafbell/team-learning-data-mining/blob/master/weathersubmission.png)
+
 ## 任务安排
 
 开营时间：02月16日21:00
