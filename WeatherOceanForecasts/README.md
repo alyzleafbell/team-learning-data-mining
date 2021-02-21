@@ -4,6 +4,13 @@ diary:
 2. 改用tensorflow自己的gpu版本2.1.2，提交顺利，运行时却报错了
 提交具体截图如下：
 ![image](https://github.com/alyzleafbell/team-learning-data-mining/blob/master/weathersubmission.png)
+查看日志，发现如下异常：
+File "/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/engine/training.py", line 2410, in _standardize_tensors
+exception_prefix='input')
+File "/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/engine/training_utils.py", line 573, in standardize_input_data
+'with shape ' + str(data_shape))
+ValueError: Error when checking input: expected input_1 to have 5 dimensions, but got array with shape (12, 24, 72, 4)
+查资料说keras传递标量会自动扩展维度，正在查找资料看如何修复
 
 ## 任务安排
 
